@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #eeeeee;
+    font-family: Arial, sans-serif;
+  }
+  
+  .keyboard-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .keyboard-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  
+  .keyboard {
+    padding: 12px 18px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    box-shadow: 0 4px #ccc;
+    text-align: center;
+  }
+  
+  /* Hover & Click Effects */
+  .keyboard:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .keyboard:active {
+    transform: translateY(8px);
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Special Key Widths */
+  .key-tab     { width: 90px; }
+  .key-caps    { width: 120px; font-size: x-small;}
+  .key-shift   { width: 152px; }
+  .key-enter   { width: 120px; }
+  .key-backspace { width: 125px; }
+  .key-space   { width: 300px; }
+  .key-ctrl,
+  .key-alt,
+  .key-win,
+  .key-fn,
+  .key-menu    { width: 75px; }
+  .key-tilde   { width: 70px; }
+  .key-backslash    { width: 90px; }
